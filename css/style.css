@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.open-sans-osans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  /* Center the table */
+  margin: auto;
+  /* Add a border around the table */
+  border: 1px solid #ddd;
+  /* Rounded corners */
+  border-radius: 8px;
+  /* Ensure rounded corners are visible */
+  overflow: hidden;
+  /* Add shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  /* border: 1px solid; */
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  /* likely not necessary */
+  font-family: "Open Sans", sans-serif;
+}
+
+th {
+  /* Table header background color */
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+th img {
+  display: block;
+  margin: 0 auto 5px;
+  /* Set a uniform width for images */
+  width: 40px;
+  /* Set a uniform height for images */
+  height: 40px;
+  /* Ensure the image covers the given dimensions */
+  object-fit: cover;
+}
+
+
+/* Add alternating row colors */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Add hover effect to rows */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Left justify the first column */
+td:first-child,
+th:first-child {
+  text-align: left;
+}
+
+/* Disclaimer styling */
+.disclaimer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+}
+
+.disclaimer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.disclaimer a:hover {
+  text-decoration: underline;
+}
